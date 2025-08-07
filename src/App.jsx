@@ -1,7 +1,31 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import {
+  Blog,
+  Business,
+  CardDeal,
+  Clients,
+  CTA,
+  Footer,
+  Hero,
+  Navbar,
+  OurTeam,
+  WhatWeDo,
+} from "./components";
+import {
+  BlogDetail,
+  Content,
+  Create,
+  Explore,
+  HelpCenter,
+  HowItWorks,
+  JoinUs,
+  Newsletters,
+  Partners,
+  Sponsor,
+  Suggestions,
+  TermsAndServices,
+} from "./pages";
 import styles from "./style";
-import { WhatWeDo, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, OurTeam, Hero, Blog } from "./components";
-import { Content, HowItWorks, JoinUs, Sponsor, Newsletters, Suggestions, Partners, Create, Explore, TermsAndServices, HelpCenter, BlogDetail } from "./pages";
 
 const Home = () => (
   <>
@@ -13,7 +37,7 @@ const Home = () => (
 
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        <Stats />
+        {/* <Stats /> */}
         <Business />
         <WhatWeDo />
         <CardDeal />
