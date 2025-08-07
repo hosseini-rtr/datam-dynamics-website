@@ -1,11 +1,11 @@
-import { bill } from "../assets";
+import { display } from "../assets";
 import styles, { layout } from "../style";
 
 const WhatWeDo = () => (
   <section id="WhatWeDo" className={layout.sectionReverse}>
     <div className={layout.sectionImgReverse}>
       <img
-        src={bill}
+        src={display}
         alt="WhatWeDo"
         className="w-[100%] h-[100%] relative z-[5]"
       />

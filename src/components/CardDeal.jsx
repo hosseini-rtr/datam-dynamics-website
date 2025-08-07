@@ -1,4 +1,4 @@
-import { card } from "../assets";
+import { radar } from "../assets";
 import styles, { layout } from "../style";
 import Button from "./Button";
 
@@ -18,7 +18,7 @@ const CardDeal = () => (
     </div>
 
     <div className={layout.sectionImg}>
-      <img src={card} alt="WhatWeDo" className="w-[100%] h-[100%]" />
+      <img src={radar} alt="WhatWeDo" className="w-[100%] h-[100%]" />
     </div>
   </section>
 );

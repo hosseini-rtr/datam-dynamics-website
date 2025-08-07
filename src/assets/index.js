@@ -1,4 +1,3 @@
-import airbnb from "./airbnb.png";
 import arrowUp from "./arrow-up.svg";
 import binance from "./binance.png";
 import close from "./close.svg";
@@ -19,20 +18,19 @@ import quotes from "./quotes.svg";
 import radar from "./radar-datam.png";
 import send from "./Send.svg";
 import shield from "./Shield.svg";
+import sponsor from "./sponsor-placeholder.png";
 import star from "./Star.svg";
 import twitter from "./twitter.svg";
 import people03 from "./user03.jpeg";
 import people04 from "./user04.jpg";
 
 export {
-  airbnb,
   arrowUp,
-  display as bill,
   binance,
-  radar as card,
   close,
   coinbase,
   discount,
+  display,
   dropbox,
   facebook,
   google,
@@ -45,9 +43,11 @@ export {
   people03,
   people04,
   quotes,
+  radar,
   robot,
   send,
   shield,
+  sponsor,
   star,
   twitter,
 };
