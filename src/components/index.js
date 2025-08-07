@@ -1,23 +1,25 @@
-import Navbar from "./Navbar";
-import Billing from "./Billing";
+import Blog from "./Blog";
 import CardDeal from "./CardDeal";
-import Business from "./Business";
 import Clients from "./Clients";
 import CTA from "./CTA";
-import Stats from "./Stats";
 import Footer from "./Footer";
-import Testimonials from "./Testimonials";
 import Hero from "./Hero";
+import Navbar from "./Navbar";
+import OurMission from "./OurMission";
+import OurTeam from "./OurTeam";
+import Stats from "./Stats";
+import WhatWeDo from "./WhatWeDo";
 
 export {
-  Navbar,
-  Billing,
+  Blog,
+  OurMission as Business,
   CardDeal,
-  Business,
   Clients,
   CTA,
-  Stats,
   Footer,
-  Testimonials,
   Hero,
+  Navbar,
+  OurTeam,
+  Stats,
+  WhatWeDo,
 };

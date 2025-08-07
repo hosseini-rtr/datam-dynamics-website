@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 :root {
+  background-color: #11101d;
   --black-gradient: linear-gradient(
     144.39deg,
     #ffffff -278.56%,
@@ -106,8 +107,11 @@
     transform: translateY(0);
   }
 }
+.innovation-card {
+  background: var(--black-gradient);
+}
 
-.feature-card:hover {
+.innovation-card:hover {
   background: var(--black-gradient);
   box-shadow: var(--card-shadow);
 }

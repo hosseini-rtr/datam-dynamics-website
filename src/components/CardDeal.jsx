@@ -14,11 +14,11 @@ const CardDeal = () => (
         aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
       </p>
 
-      <Button styles={`mt-10`} />
+      <Button styles={`mt-10`} to="/sponsor">Be Sponsor</Button>
     </div>
 
     <div className={layout.sectionImg}>
-      <img src={card} alt="billing" className="w-[100%] h-[100%]" />
+      <img src={card} alt="WhatWeDo" className="w-[100%] h-[100%]" />
     </div>
   </section>
 );

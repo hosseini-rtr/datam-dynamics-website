@@ -1,72 +1,107 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import {
+  airbnb,
+  binance,
+  coinbase,
+  dropbox,
+  facebook,
+  instagram,
+  linkedin,
+  people01,
+  people02,
+  people03,
+  people04,
+  send,
+  shield,
+  star,
+  twitter,
+} from "../assets";
 
 export const navLinks = [
   {
-    id: "home",
+    id: "",
     title: "Home",
   },
   {
-    id: "features",
-    title: "Features",
+    id: "how-it-works",
+    title: "How It Works",
   },
   {
-    id: "product",
-    title: "Product",
+    id: "blog",
+    title: "Blog",
   },
   {
-    id: "clients",
-    title: "Clients",
+    id: "help-center",
+    title: "Help Center",
+  },
+  {
+    id: "partners",
+    title: "Partners",
   },
 ];
 
-export const features = [
+export const innovations = [
   {
-    id: "feature-1",
+    id: "innovation-1",
     icon: star,
-    title: "Rewards",
+    title: "Advanced Engineering",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "We employ cutting-edge engineering techniques to create innovative robotic solutions that address real-world challenges.",
   },
   {
-    id: "feature-2",
+    id: "innovation-2",
     icon: shield,
-    title: "100% Secured",
+    title: "Smart Automation",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "Our smart automation systems integrate seamlessly into various industries, enhancing productivity and efficiency.",
   },
   {
-    id: "feature-3",
+    id: "innovation-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "AI Integration",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "By leveraging artificial intelligence, we develop intelligent systems capable of learning and adapting to new environments and tasks.",
+  },
+  {
+    id: "innovation-4",
+    icon: send,
+    title: "Innovative Designs",
+    content:
+      "Our team constantly explores new design methodologies to create unique and efficient robotic systems.",
   },
 ];
 
-export const feedback = [
+export const heroes = [
   {
-    id: "feedback-1",
-    content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
+    id: "heroes-1",
+    // content:
+    //   "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
+    name: "Seyed Hossein Hosseini",
+    title: "Founder & Tech Leader",
     img: people01,
   },
   {
-    id: "feedback-2",
-    content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
+    id: "heroes-2",
+    // content:
+    //   "Money makes your life easier. If you're lucky to have it, you're lucky.",
+    name: "Meisam Dehghan",
+    title: "Founder & Mechanical Leader",
     img: people02,
   },
   {
-    id: "feedback-3",
-    content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
+    id: "heroes-3",
+    // content:
+    //   "It is usually people in the money business, finance, and international trade that are really rich.",
+    name: "Aryan Emami",
+    title: "Mechanical engineer and professional racing",
     img: people03,
+  },
+  {
+    id: "heroes-4",
+    // content:
+    //   "It is usually people in the money business, finance, and international trade that are really rich.",
+    name: "Kiarash Nayeredin Zadeh",
+    title: "Electrical engineering",
+    img: people04,
   },
 ];
 
@@ -94,23 +129,23 @@ export const footerLinks = [
     links: [
       {
         name: "Content",
-        link: "https://www.hoobank.com/content/",
+        link: "/content/",
       },
       {
         name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
+        link: "/how-it-works/",
       },
       {
         name: "Create",
-        link: "https://www.hoobank.com/create/",
+        link: "/create/",
       },
       {
         name: "Explore",
-        link: "https://www.hoobank.com/explore/",
+        link: "/explore/",
       },
       {
         name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
+        link: "/terms-and-services/",
       },
     ],
   },
@@ -119,36 +154,36 @@ export const footerLinks = [
     links: [
       {
         name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
+        link: "/help-center/",
       },
       {
         name: "Partners",
-        link: "https://www.hoobank.com/partners/",
+        link: "/partners/",
       },
       {
         name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
+        link: "/suggestions/",
       },
       {
         name: "Blog",
-        link: "https://www.hoobank.com/blog/",
+        link: "/blog/",
       },
       {
         name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
+        link: "/newsletters/",
       },
     ],
   },
   {
     title: "Partner",
     links: [
+      // {
+      //   name: "Our Sponsors",
+      //   link: "/sponsors/",
+      // },
       {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
-      },
-      {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
+        name: "Become a Sponsor",
+        link: "/sponsor/",
       },
     ],
   },
