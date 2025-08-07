@@ -1,8 +1,4 @@
 import {
-  airbnb,
-  binance,
-  coinbase,
-  dropbox,
   facebook,
   instagram,
   linkedin,
@@ -12,6 +8,7 @@ import {
   people04,
   send,
   shield,
+  sponsor,
   star,
   twitter,
 } from "../assets";
@@ -208,25 +205,25 @@ export const socialMedia = [
   {
     id: "social-media-4",
     icon: linkedin,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/company/datam-dynamics/",
   },
 ];
 
 export const clients = [
   {
     id: "client-1",
-    logo: airbnb,
+    logo: sponsor,
   },
   {
     id: "client-2",
-    logo: binance,
+    logo: sponsor,
   },
   {
     id: "client-3",
-    logo: coinbase,
+    logo: sponsor,
   },
   {
     id: "client-4",
-    logo: dropbox,
+    logo: sponsor,
   },
 ];

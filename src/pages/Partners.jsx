@@ -1,29 +1,29 @@
-import { airbnb, binance, coinbase, dropbox } from "../assets";
+import { sponsor } from "../assets";
 import styles, { layout } from "../style";
 
 const partners = [
   {
     id: "partner-1",
-    logo: airbnb,
-    name: "Airbnb",
+    logo: sponsor,
+    name: "sponsor",
     description: "Strategic partner in autonomous hospitality solutions.",
   },
   {
     id: "partner-2",
-    logo: binance,
+    logo: sponsor,
     name: "Binance",
     description:
       "Collaborating on blockchain integration for autonomous systems.",
   },
   {
     id: "partner-3",
-    logo: coinbase,
+    logo: sponsor,
     name: "Coinbase",
     description: "Partner in developing secure transaction systems.",
   },
   {
     id: "partner-4",
-    logo: dropbox,
+    logo: sponsor,
     name: "Dropbox",
     description: "Cloud storage solutions for autonomous data management.",
   },
