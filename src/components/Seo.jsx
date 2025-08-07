@@ -1,16 +1,29 @@
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Datam Dynamics",
+  url: "https://datamdynamics.com",
+  sameAs: [
+    "https://www.facebook.com/DatamDynamics",
+    "https://twitter.com/datamdynamics",
+    "https://www.linkedin.com/company/datamdynamics",
+    "https://www.instagram.com/datamdynamics",
+    "https://github.com/datamdynamics",
+  ],
+};
 
 const Seo = ({
-  title = 'Datam Dynamics - Innovative Technology Solutions',
-  description = 'Datam Dynamics provides cutting-edge technology solutions, AI integration, and digital transformation services to help businesses thrive in the modern era.',
+  title = "Datam Dynamics - Innovative Technology Solutions",
+  description = "Datam Dynamics provides cutting-edge technology solutions, AI integration, and digital transformation services to help businesses thrive in the modern era.",
   canonical,
-  image = '/datamdynamics.svg',
-  type = 'website',
-  schemaMarkup
+  image = "/datamdynamics.svg",
+  type = "website",
+  schemaMarkup = organizationSchema,
 }) => {
-  const siteUrl = 'https://datamdynamics.com';
+  const siteUrl = "https://datamdynamics.com";
   const pageUrl = canonical ? `${siteUrl}${canonical}` : siteUrl;
-  const imageUrl = image.startsWith('http') ? image : `${siteUrl}${image}`;
+  const imageUrl = image.startsWith("http") ? image : `${siteUrl}${image}`;
 
   return (
     <Helmet>
