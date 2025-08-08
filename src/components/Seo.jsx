@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -17,7 +18,7 @@ const Seo = ({
   title = "Datam Dynamics - Innovative Technology Solutions",
   description = "Datam Dynamics provides cutting-edge technology solutions, AI integration, and digital transformation services to help businesses thrive in the modern era.",
   canonical,
-  image = "/datamdynamics.svg",
+  image = "/summary_large_image.png",
   type = "website",
   schemaMarkup = organizationSchema,
 }) => {

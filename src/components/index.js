@@ -7,6 +7,7 @@ import Hero from "./Hero";
 import Navbar from "./Navbar";
 import OurMission from "./OurMission";
 import OurTeam from "./OurTeam";
+import Seo from "./Seo";
 import Stats from "./Stats";
 import WhatWeDo from "./WhatWeDo";
 
@@ -20,6 +21,7 @@ export {
   Hero,
   Navbar,
   OurTeam,
+  Seo,
   Stats,
   WhatWeDo,
 };

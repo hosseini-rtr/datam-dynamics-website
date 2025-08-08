@@ -1,14 +1,12 @@
-import styles from "../style";
-import { layout } from "../style";
-import { star } from "../assets";
-import FormInput from '../components/FormInput';
+import FormInput from "../components/FormInput";
+import styles, { layout } from "../style";
 
 const categories = [
   "Product Features",
   "User Experience",
   "Technical Support",
   "Documentation",
-  "Other"
+  "Other",
 ];
 
 const SuggestionForm = () => (
@@ -18,11 +16,11 @@ const SuggestionForm = () => (
       type="select"
       name="category"
       options={[
-        { value: '', label: 'Select a category' },
-        ...categories.map(category => ({
+        { value: "", label: "Select a category" },
+        ...categories.map((category) => ({
           value: category.toLowerCase().replace(" ", "_"),
-          label: category
-        }))
+          label: category,
+        })),
       ]}
       required
     />
@@ -58,11 +56,10 @@ const Suggestions = () => (
       <div className={`${styles.boxWidth}`}>
         <section className={layout.section}>
           <div className={layout.sectionInfo}>
-            <h2 className={styles.heading2}>
-              Share Your Suggestions
-            </h2>
+            <h2 className={styles.heading2}>Share Your Suggestions</h2>
             <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-              Help us improve our products and services by sharing your ideas and feedback.
+              Help us improve our products and services by sharing your ideas
+              and feedback.
             </p>
           </div>
 
@@ -70,7 +67,8 @@ const Suggestions = () => (
             <SuggestionForm />
 
             <p className="font-poppins font-normal text-[14px] text-dimWhite text-center mt-6">
-              Your feedback is valuable to us. We review all suggestions and implement the most impactful ones.
+              Your feedback is valuable to us. We review all suggestions and
+              implement the most impactful ones.
             </p>
           </div>
         </section>

@@ -9,6 +9,7 @@ import {
   Hero,
   Navbar,
   OurTeam,
+  Seo,
   WhatWeDo,
 } from "./components";
 import {
@@ -29,6 +30,12 @@ import styles from "./style";
 
 const Home = () => (
   <>
+    <Seo
+      title="Datam Dynamics - Innovative Technology Solutions"
+      description="Datam Dynamics provides cutting-edge technology solutions, AI integration, and digital transformation services to help businesses thrive in the modern era."
+      canonical="/"
+      image="/summary_large_image.png"
+    />
     <div className={`bg-primary ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <Hero />

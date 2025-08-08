@@ -1,8 +1,8 @@
-import express from 'express';
-import { fileURLToPath } from 'url';
-import { dirname, resolve } from 'path';
-import compression from 'compression';
-import sirv from 'sirv';
+import compression from "compression";
+import express from "express";
+import { dirname } from "path";
+import sirv from "sirv";
+import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -14,19 +14,21 @@ const port = process.env.PORT || 3000;
 app.use(compression());
 
 // Serve static files
-app.use(sirv('dist', { 
-  dev: process.env.NODE_ENV === 'development',
-  gzip: true
-}));
+app.use(
+  sirv("dist", {
+    dev: process.env.NODE_ENV === "development",
+    gzip: true,
+  })
+);
 
 // Handle all routes
-app.get('*', async (req, res) => {
+app.get("*", async (req, res) => {
   try {
     const template = await generateTemplate(req.url);
     res.send(template);
   } catch (error) {
-    console.error('Error handling request:', error);
-    res.status(500).send('Internal Server Error');
+    console.error("Error handling request:", error);
+    res.status(500).send("Internal Server Error");
   }
 });
 
@@ -37,7 +39,7 @@ async function generateTemplate(url) {
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/datamdynamics.svg" />
+        <link rel="icon" href="/favicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#000000" />
         ${metaTags}
@@ -52,16 +54,18 @@ async function generateTemplate(url) {
 
 function generateMetaTags(url) {
   // Base meta tags
-  const baseTitle = 'Datam Dynamics - Innovative Technology Solutions';
-  const baseDescription = 'Datam Dynamics provides cutting-edge technology solutions, AI integration, and digital transformation services to help businesses thrive in the modern era.';
-  const baseImage = '/datamdynamics.svg';
-  
+  const baseTitle = "Datam Dynamics - Innovative Technology Solutions";
+  const baseDescription =
+    "Datam Dynamics provides cutting-edge technology solutions, AI integration, and digital transformation services to help businesses thrive in the modern era.";
+  const baseImage = "/summary_large_image.png";
+
   // Route-specific meta tags
   const routeMetaTags = {
-    '/blog': {
-      title: 'Blog - Latest Insights & News | Datam Dynamics',
-      description: 'Stay updated with the latest developments in autonomous technology and industry insights from Datam Dynamics.',
-      type: 'blog'
+    "/blog": {
+      title: "Blog - Latest Insights & News | Datam Dynamics",
+      description:
+        "Stay updated with the latest developments in autonomous technology and industry insights from Datam Dynamics.",
+      type: "blog",
     },
     // Add more routes as needed
   };
@@ -69,7 +73,7 @@ function generateMetaTags(url) {
   const routeData = routeMetaTags[url] || {};
   const title = routeData.title || baseTitle;
   const description = routeData.description || baseDescription;
-  const type = routeData.type || 'website';
+  const type = routeData.type || "website";
 
   return `
     <title>${title}</title>

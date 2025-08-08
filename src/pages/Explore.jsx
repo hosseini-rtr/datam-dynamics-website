@@ -1,28 +1,30 @@
-import styles from "../style";
-import { layout } from "../style";
 import { shield, star } from "../assets";
+import Seo from "../components/Seo";
+import styles, { layout } from "../style";
 
 const applications = [
   {
     id: "app-1",
     title: "Autonomous Vehicles",
-    content: "Our autonomous vehicle technology enables safe and efficient transportation solutions across various industries.",
+    content:
+      "Our autonomous vehicle technology enables safe and efficient transportation solutions across various industries.",
     features: [
       "Advanced navigation systems",
       "Real-time obstacle detection",
-      "Adaptive path planning"
-    ]
+      "Adaptive path planning",
+    ],
   },
   {
     id: "app-2",
     title: "Industrial Robotics",
-    content: "Smart robotic systems that enhance manufacturing and logistics operations with precision and reliability.",
+    content:
+      "Smart robotic systems that enhance manufacturing and logistics operations with precision and reliability.",
     features: [
       "Automated assembly lines",
       "Warehouse automation",
-      "Quality control systems"
-    ]
-  }
+      "Quality control systems",
+    ],
+  },
 ];
 
 const ApplicationCard = ({ title, content, features }) => (
@@ -35,11 +37,15 @@ const ApplicationCard = ({ title, content, features }) => (
     </p>
     <ul className="list-none mt-4">
       {features.map((feature, index) => (
-        <li
-          key={index}
-          className="flex flex-row items-center py-[6px]">
-          <div className={`w-[24px] h-[24px] rounded-full ${styles.flexCenter} bg-dimBlue mr-3`}>
-            <img src={index % 2 === 0 ? star : shield} alt="icon" className="w-[50%] h-[50%] object-contain" />
+        <li key={index} className="flex flex-row items-center py-[6px]">
+          <div
+            className={`w-[24px] h-[24px] rounded-full ${styles.flexCenter} bg-dimBlue mr-3`}
+          >
+            <img
+              src={index % 2 === 0 ? star : shield}
+              alt="icon"
+              className="w-[50%] h-[50%] object-contain"
+            />
           </div>
           <p className="font-poppins font-normal text-[16px] text-dimWhite">
             {feature}
@@ -51,28 +57,37 @@ const ApplicationCard = ({ title, content, features }) => (
 );
 
 const Explore = () => (
-  <div className="bg-primary w-full overflow-hidden">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <section className={layout.section}>
-          <div className={layout.sectionInfo}>
-            <h2 className={styles.heading2}>
-              Explore Our Technology <br className="sm:block hidden" /> Applications
-            </h2>
-            <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-              Discover how our autonomous technology solutions are transforming industries and creating new possibilities.
-            </p>
-          </div>
+  <>
+    <Seo
+      title="Explore Applications - Datam Dynamics"
+      description="Discover how our autonomous technology solutions are transforming industries and creating new possibilities."
+      canonical="/explore"
+    />
+    <div className="bg-primary w-full overflow-hidden">
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+          <section className={layout.section}>
+            <div className={layout.sectionInfo}>
+              <h2 className={styles.heading2}>
+                Explore Our Technology <br className="sm:block hidden" />{" "}
+                Applications
+              </h2>
+              <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+                Discover how our autonomous technology solutions are
+                transforming industries and creating new possibilities.
+              </p>
+            </div>
 
-          <div className="flex flex-wrap justify-center w-full relative z-[1]">
-            {applications.map((app) => (
-              <ApplicationCard key={app.id} {...app} />
-            ))}
-          </div>
-        </section>
+            <div className="flex flex-wrap justify-center w-full relative z-[1]">
+              {applications.map((app) => (
+                <ApplicationCard key={app.id} {...app} />
+              ))}
+            </div>
+          </section>
+        </div>
       </div>
     </div>
-  </div>
+  </>
 );
 
 export default Explore;

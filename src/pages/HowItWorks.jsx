@@ -1,4 +1,5 @@
 import { send, shield, star } from "../assets";
+import Seo from "../components/Seo";
 import styles from "../style";
 
 const features = [
@@ -46,31 +47,38 @@ const FeatureCard = ({ icon, title, content, index }) => (
 );
 
 const HowItWorks = () => (
-  <div className="bg-primary w-full overflow-hidden">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <section
-          id="features"
-          className={`${styles.paddingY} ${styles.flexCenter} flex-col`}
-        >
-          <div className="flex-1 flex flex-col items-start justify-start">
-            <h2 className={styles.heading2}>How Our Technology Works</h2>
-            <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-              Our autonomous systems combine cutting-edge hardware with
-              sophisticated software to deliver reliable and efficient
-              performance.
-            </p>
-          </div>
+  <>
+    <Seo
+      title="How It Works - Datam Dynamics"
+      description="Learn how our autonomous technology combines perception, decision-making, and control systems to deliver reliable performance."
+      canonical="/how-it-works"
+    />
+    <div className="bg-primary w-full overflow-hidden">
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+          <section
+            id="features"
+            className={`${styles.paddingY} ${styles.flexCenter} flex-col`}
+          >
+            <div className="flex-1 flex flex-col items-start justify-start">
+              <h2 className={styles.heading2}>How Our Technology Works</h2>
+              <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+                Our autonomous systems combine cutting-edge hardware with
+                sophisticated software to deliver reliable and efficient
+                performance.
+              </p>
+            </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mt-10">
-            {features.map((feature, index) => (
-              <FeatureCard key={feature.id} {...feature} index={index} />
-            ))}
-          </div>
-        </section>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mt-10">
+              {features.map((feature, index) => (
+                <FeatureCard key={feature.id} {...feature} index={index} />
+              ))}
+            </div>
+          </section>
+        </div>
       </div>
     </div>
-  </div>
+  </>
 );
 
 export default HowItWorks;

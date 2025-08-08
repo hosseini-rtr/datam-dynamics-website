@@ -70,35 +70,67 @@ export const innovations = [
 export const heroes = [
   {
     id: "heroes-1",
-    // content:
-    //   "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
     name: "Seyed Hossein Hosseini",
     title: "Founder & Tech Leader",
     img: people01,
+    bio: "Passionate about autonomous systems and robotics. Leading our technical vision and driving innovation in AI-powered solutions.",
+    expertise: [
+      "AI/ML",
+      "Robotics",
+      "Software Engineering",
+      "System Architecture",
+    ],
+    linkedinUrl: "https://www.linkedin.com/in/seyed-hossein-hosseini",
+    instagramUrl: "https://www.instagram.com/hossein_hosseini",
+    twitterUrl: "https://twitter.com/hossein_tech",
   },
   {
     id: "heroes-2",
-    // content:
-    //   "Money makes your life easier. If you're lucky to have it, you're lucky.",
     name: "Meisam Dehghan",
     title: "Founder & Mechanical Leader",
     img: people02,
+    bio: "Expert in mechanical design and manufacturing. Specializing in autonomous vehicle systems and precision engineering.",
+    expertise: [
+      "Mechanical Design",
+      "Manufacturing",
+      "Vehicle Dynamics",
+      "CAD/CAM",
+    ],
+    linkedinUrl: "https://www.linkedin.com/in/meisam-dehghan",
+    instagramUrl: "https://www.instagram.com/meisam_mech",
+    twitterUrl: "https://twitter.com/meisam_engineering",
   },
   {
     id: "heroes-3",
-    // content:
-    //   "It is usually people in the money business, finance, and international trade that are really rich.",
     name: "Aryan Emami",
-    title: "Mechanical engineer and professional racing",
+    title: "Mechanical Engineer & Professional Racing",
     img: people03,
+    bio: "Combining racing expertise with engineering precision. Developing high-performance autonomous systems for competitive environments.",
+    expertise: [
+      "Racing Engineering",
+      "Performance Tuning",
+      "Vehicle Dynamics",
+      "Aerodynamics",
+    ],
+    linkedinUrl: "https://www.linkedin.com/in/aryan-emami",
+    instagramUrl: "https://www.instagram.com/aryan_racing",
+    twitterUrl: "https://twitter.com/aryan_racing_eng",
   },
   {
     id: "heroes-4",
-    // content:
-    //   "It is usually people in the money business, finance, and international trade that are really rich.",
     name: "Kiarash Nayeredin Zadeh",
-    title: "Electrical engineering",
+    title: "Electrical Engineer",
     img: people04,
+    bio: "Specializing in electrical systems and control engineering. Creating robust electrical architectures for autonomous platforms.",
+    expertise: [
+      "Electrical Systems",
+      "Control Engineering",
+      "PCB Design",
+      "Embedded Systems",
+    ],
+    linkedinUrl: "https://www.linkedin.com/in/kiarash-nayeredin",
+    instagramUrl: "https://www.instagram.com/kiarash_electrical",
+    twitterUrl: "https://twitter.com/kiarash_ee",
   },
 ];
 
