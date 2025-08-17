@@ -6,7 +6,7 @@ const WhatWeDo = () => (
     <div className={layout.sectionImgReverse}>
       <img
         src={display}
-        alt="WhatWeDo"
+        alt="Autonomous Systems Development - Datam Dynamics"
         className="w-[100%] h-[100%] relative z-[5]"
       />
 
